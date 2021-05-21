@@ -1,0 +1,4 @@
+DROP DATABASE IF EXISTS habits_db;
+CREATE DATABASE habits_db;
+
+
