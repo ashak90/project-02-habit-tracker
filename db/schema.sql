@@ -1,4 +1,8 @@
-DROP DATABASE IF EXISTS habits_db;
-CREATE DATABASE habits_db;
+DROP DATABASE IF EXISTS tracker_db;
+CREATE DATABASE tracker_db;
+
+USE tracker_db;
+
+CREATE TABLE users;
 
 
