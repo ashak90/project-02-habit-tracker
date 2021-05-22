@@ -1,3 +1,3 @@
 # The Habit Tracker
 
-## by: The Callback Cats
+## by: The Callback Cats.
