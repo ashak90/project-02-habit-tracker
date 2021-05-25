@@ -1,10 +1,10 @@
 const { Habit, User } = require('../../models');
-
+const withAuth = require("../../utils/auth");
 const router = require('express').Router();
 
 //the /api/habits endpoint
 
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
     try {
         const habits = await Habit.findAll({
             include: [{ model: User }]
