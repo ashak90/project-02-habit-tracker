@@ -5,5 +5,12 @@
         "email": "jim@test.net",
         "age": 42,
         "password": "password123"
+    },
+    {
+        "first_name": "Test",
+        "last_name": "Testerson",
+        "email": "test@test.net",
+        "age": 23,
+        "password": "123password"
     }
 ]
