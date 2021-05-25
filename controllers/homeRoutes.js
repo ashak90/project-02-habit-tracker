@@ -6,5 +6,8 @@ router.get('/', (req, res) => {
         text: "some test text"
     });
 });
+router.get('/login', (req, res) => {
+    res.status(400).send("Please log in!");
+})
 
 module.exports = router;
