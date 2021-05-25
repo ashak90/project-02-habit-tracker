@@ -12,12 +12,12 @@ const seedDatabase = async () => {
         returning: true,
     });
 
-    for (const habit of habitData) {
-        await Habit.create({
-            ...habit,
-            user_id: users[Math.floor(Math.random() * users.length)].id,
-        });
-    }
+    // for (const habit of habitData) {
+    //     await Habit.create({
+    //         ...habit,
+    //         user_id: users[Math.floor(Math.random() * users.length)].id,
+    //     });
+    // }
     console.log("Seeding complete");
     process.exit(0);
 };
