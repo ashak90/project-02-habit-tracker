@@ -11,4 +11,8 @@ CREATE TABLE Users (
     PRIMARY KEY (id)
 );
 
+CREATE TABLE Habits (
+    id INTEGER AUTO_INCREMENT NOT NULL,
+)
+
 
