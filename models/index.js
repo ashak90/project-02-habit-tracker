@@ -1,7 +1,7 @@
 const User = require("./User");
 const Habit = require("./Habit");
 
-User.hasMany(Habits, {
+User.hasMany(Habit, {
     foreignKey: "user_id",
     onDelete: "CASCADE"
 });

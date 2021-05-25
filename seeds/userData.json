@@ -4,6 +4,7 @@
         "last_name": "Testman",
         "email": "jim@test.net",
         "age": 42,
+        "username": "jtestman",
         "password": "password123"
     },
     {
@@ -11,6 +12,7 @@
         "last_name": "Testerson",
         "email": "test@test.net",
         "age": 23,
+        "username": "tTesterson",
         "password": "123password"
     }
 ]

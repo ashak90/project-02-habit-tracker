@@ -26,7 +26,6 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-
     email: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -35,12 +34,10 @@ User.init(
         isEmail: true,
       },
     },
-
     age: {
       type: DataTypes.INTEGER,
       allowNull: true,
     },
-
     username: {
       type: DataTypes.STRING,
       allowNull: false,
