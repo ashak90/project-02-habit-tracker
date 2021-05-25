@@ -4,7 +4,7 @@ const router = require('express').Router();
 
 //the /api/habits endpoint
 
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const habits = await Habit.findAll({
             include: [{ model: User }]
