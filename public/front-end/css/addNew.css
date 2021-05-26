@@ -1,0 +1,24 @@
+#grad {
+    background-image: linear-gradient(yellow, orange, red);
+  }
+    
+
+.addNew {
+    margin-left: 65%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+.title {
+    margin-left: 5%;
+}
+
+.topHeading {
+    margin-top: 5%;
+}
+
+.habitBox {
+    margin-left: 35%;
+    margin-right: 35%;
+}
