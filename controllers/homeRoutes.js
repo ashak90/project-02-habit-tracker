@@ -18,5 +18,7 @@ router.get('/signup', (req, res) => {
 router.get('/habits', withAuth, async (req, res) => {
     res.render('habits');
 });
-
+router.get('/addHabit', withAuth, async (req, res) => {
+    res.render('addHabit');
+});
 module.exports = router;
