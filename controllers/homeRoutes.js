@@ -1,13 +1,22 @@
 const router = require('express').Router();
+const withAuth = require('../utils/auth');
+const { User, Habit } = require('../models');
 
 router.get('/', (req, res) => {
-    res.render('test', {
-        message: "Hello World!",
-        text: "some test text"
-    });
+    res.render('homepage');
 });
 router.get('/login', (req, res) => {
-    res.status(400).send("Please log in!");
-})
+    if (req.session.logged_in) {
+        res.redirect('/habits');
+        return;
+    }
+    res.render('login');
+});
+router.get('/signup', (req, res) => {
+    res.render('signup');
+});
+router.get('/habits', withAuth, async (req, res) => {
+    res.render('habits');
+});
 
 module.exports = router;
