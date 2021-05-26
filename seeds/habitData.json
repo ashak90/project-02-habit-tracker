@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Walking",
+        "good_habit": true,
+        "frequency": 3,
+        "target_freq": 7,
+        "user_id": 1
+    },
+    {
+        "name": "Studying",
+        "good_habit": true,
+        "frequency": 5,
+        "target_freq": 5,
+        "user_id": 2
+    },
+    {
+        "name": "Drinking",
+        "good_habit": false,
+        "frequency": 3,
+        "target_freq": 2,
+        "user_id": 1
+    },
+    {
+        "name": "Smoking",
+        "good_habit": false,
+        "frequency": 7,
+        "target_freq": 1,
+        "user_id": 2
+    }
+]

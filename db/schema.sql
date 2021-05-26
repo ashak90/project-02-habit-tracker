@@ -3,6 +3,5 @@ CREATE DATABASE tracker_db;
 
 USE tracker_db;
 
-CREATE TABLE users;
 
 
