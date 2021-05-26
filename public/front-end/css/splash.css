@@ -1,0 +1,7 @@
+#grad {
+    background-image: linear-gradient(yellow, orange, red);
+  }
+
+  .is-horizontal-center {
+    justify-content: center;
+  }
