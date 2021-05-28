@@ -8,17 +8,36 @@
                 </h1>
             </div>
             <hr>
-
-
             <!-- New habbit starts below -->
             <div
                 class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading">
 
                 <div class="column ">
-                    <input class="input is-rounded" type="text" placeholder="Habit Name">
+                    <label for="habitName"> Habit Name
+                    <input id= "habit-name" class="input is-rounded" type="text" placeholder="Habit Name"></label>
+                </div>
+            </div>
+             <div
+                class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading">
+
+                <div class="column ">
+                    <label for="desired-frequency"> Desired Frequency
+                    <input id= "desired-frequency" class="input is-rounded" type="text" placeholder="Habit Name"></label>
                 </div>
 
             </div>
+
+
+             <div
+                class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading">
+
+                <div class="column ">
+                    <label for="current-frequency"> Current Frequency
+                    <input id= "current-frequency" class="input is-rounded" type="text" placeholder="Habit Name"></label>
+                </div>
+
+            </div>
+
 
             <!-- Habit box section -->
 
@@ -28,28 +47,27 @@
                 <div class="box content is-large habitBox ">
                     Is this habit good or bad?
 
-                    <div class="control content is-large">
+                    {{!-- <div class="control content is-large">
                         <label class="radio">
-                            <input type="radio" name="answer">
+                            <input class="good-habit" type="radio" name="answer">
                             Good
-                        </label>
                         <br>
-                        <label class="radio">
-                            <input type="radio" name="answer">
+                            <input class="good-habit" type="radio" name="answer">
                             Bad
                         </label>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
             <!-- Add new habbit button -->
             <div
                 class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading">
-
-                <button class="button addNew">Add New Habit</button>
-
-
             </div>
+
+        <button id= "add-new-habit" class="button addNew">Add New Habit</button>
+
 
         </div>
     </section>
+
+<script src="./js/addhabit.js"></script>
