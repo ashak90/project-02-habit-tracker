@@ -17,9 +17,9 @@ Habit.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    good_habit: {
-      type: DataTypes.BOOLEAN
-    },
+    // good_habit: {
+    //   type: DataTypes.BOOLEAN
+    // },
     frequency: {
       type: DataTypes.INTEGER,
       allowNull: false,
