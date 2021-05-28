@@ -21,7 +21,7 @@ addNewHabitBtn.addEventListener("click", async function (event) {
         console.log("Responses ok!")
         console.log(response)
         // document.location.replace('/addHabit');
-        window.location.href = "/habits"
+        document.location.replace("/habits")
 
     } else {
         console.log(response)
