@@ -9,55 +9,48 @@
             </div>
             <hr>
         <div class="container">
+            <form id="add-habit">
             <!-- New habbit starts below -->
             <div
                 class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading">
 
                 <div class="column ">
                     <label for="habitName"> Habit Name </label>
-                    <input id= "habit-name" class="input is-rounded" type="text" placeholder="Habit Name">
+                    {{!-- <input id= "habit-name" class="input" type="text" placeholder="Habit Name"> --}}
+                     <textarea id= "habit-name" class="input" type="text" placeholder="Habit Name">{{name}}</textarea>
                 </div>
-            </div>
-             <div
-                class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading">
 
                 <div class="column ">
                     <label for="desired-frequency"> Desired Frequency </label>
-                    <input id= "desired-frequency" class="input is-rounded" type="text" placeholder="Habit Name">
+                    <input id= "desired-frequency" class="input" type="text" placeholder="Habit Name">
                 </div>
-
             </div>
-
-
              <div
                 class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading">
 
                 <div class="column ">
                     <label for="current-frequency"> Current Frequency </label>
-                    <input id= "current-frequency" class="input is-rounded" type="text" placeholder="Habit Name">
+                    <input id= "current-frequency" class="input" type="text" placeholder="Habit Name">
                 </div>
 
-            </div>
-
-
-            <!-- Habit box section -->
-
-            <div
-                class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading ">
-
-                <div class="box content is-large habitBox ">
+                <div class="column box content is-large">
                     Is this habit good or bad?
 
                     <div class="control content is-large">
                         <label class="radio">
                             <input class="good-habit" type="radio" name="answer">
                             Good
-                        <br>
                             <input class="good-habit" type="radio" name="answer">
                             Bad
                         </label>
                     </div>
                 </div>
+
+            </div>
+            <!-- Habit box section -->
+            <div
+                class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading ">
+
             </div>
 
             <!-- Add new habbit button -->
@@ -68,7 +61,8 @@
         <button id= "add-new-habit" class="button addNew">Add New Habit</button>
 
 
-        </div>
-    </section>
+    </div>
+    </div>
+</section>
 
 <script src="./js/addhabit.js"></script>

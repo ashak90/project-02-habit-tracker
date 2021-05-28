@@ -2,18 +2,18 @@ const addNewHabitBtn = document.getElementById('add-new-habit');
 
 addNewHabitBtn.addEventListener("click", async function (event) {
     event.preventDefault();
-    let habitnameEl = document.querySelector('#habit-name');
-    let desiredfrequencyEl = document.querySelector('#desired-frequency');
-    let currentfrequencyEl = document.querySelector('#current-frequency');
-    // let goodhabitEl = document.querySelector('.good-habit')
+    const name = document.querySelector('#habit-name').value;
+    const target_freq = document.querySelector('#desired-frequency').value;
+    const frequency = document.querySelector('#current-frequency').value;
+    const good_habit = document.querySelector('#good-habit:checked') ? true : false;
 
     const response = await fetch('/api/habits', {
         method: 'POST',
         body: JSON.stringify({
-            name: habitnameEl.value,
-            // good_habit: goodhabitEl.value,
-            frequency: currentfrequencyEl.value,
-            target_freq: desiredfrequencyEl.value,
+            name,
+            good_habit,
+            frequency,
+            target_freq,
         }),
         headers: { 'Content-Type': 'application/json' },
     });
