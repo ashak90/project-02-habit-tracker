@@ -1,18 +1,50 @@
 [
     {
-        "first_name": "Jim",
-        "last_name": "Testman",
-        "email": "jim@test.net",
-        "age": 42,
-        "username": "jtestman",
-        "password": "password123"
+        "first_name": "Steve",
+        "last_name": "Rogers",
+        "email": "caprogers@avg.net",
+        "age": 27,
+        "username": "CaptainUSA",
+        "password": "america123"
     },
     {
-        "first_name": "Test",
-        "last_name": "Testerson",
-        "email": "test@test.net",
-        "age": 23,
-        "username": "tTesterson",
-        "password": "123password"
+        "first_name": "Bruce",
+        "last_name": "Banner",
+        "email": "drbanner@avg.net",
+        "age": 49,
+        "username": "Hulk13",
+        "password": "123smash"
+    },
+    {
+        "first_name": "King",
+        "last_name": "T'Challa",
+        "email": "t.challa@avg.net",
+        "age": 35,
+        "username": "BlackPanther1",
+        "password": "wankanda4ever"
+    },
+    {
+        "first_name": "Natasha",
+        "last_name": "Romanoff",
+        "email": "nromanoff@avg.net",
+        "age": 32,
+        "username": "Blackwidow1",
+        "password": "123redledger"
+    },
+    {
+        "first_name": "Steven",
+        "last_name": "Strange",
+        "email": "drstrange@avg.net",
+        "age": 36,
+        "username": "TimeKeeper",
+        "password": "wizard321"
+    },
+    {
+        "first_name": "Wanda",
+        "last_name": "Maximoff",
+        "email": "wmaximoff@avg.net",
+        "age": 20,
+        "username": "ScarletWitch",
+        "password": "vision123"
     }
 ]
