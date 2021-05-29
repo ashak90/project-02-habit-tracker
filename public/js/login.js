@@ -1,10 +1,14 @@
-// const cancelBtn2 = document.getElementById('cancelBtn2');
+const cancelBtn = document.getElementById('cancel-btn');
+const loginBtn = document.getElementById('login-btn');
 
 
 
+cancelBtn.addEventListener('click', function () {
+    // event.preventDefault();
+    alert("Score! It worked.")
+    window.location.href = "/"
+  });
 
-// cancelBtn2.addEventListener('click', function () {
-//     event.preventDefault();
-//     console.log("You hit the cancel button")
-//     window.location.href = "/"
-//   })
+loginBtn.addEventListener('click', function () {
+    
+})
