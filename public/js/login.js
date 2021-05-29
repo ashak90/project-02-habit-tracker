@@ -4,11 +4,10 @@ const loginBtn = document.getElementById('login-btn');
 
 
 cancelBtn.addEventListener('click', function () {
-    // event.preventDefault();
-    alert("Score! It worked.")
-    window.location.href = "/"
-  });
+  // event.preventDefault();
+  window.location.href = "/"
+});
 
 loginBtn.addEventListener('click', function () {
-    
+
 })
