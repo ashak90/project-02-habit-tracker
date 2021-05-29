@@ -1,7 +1,44 @@
 #grad {
-    background-image: linear-gradient(yellow, orange, red);
-  }
+  background-image: linear-gradient(yellow, orange, red);
+}
 
-  .is-horizontal-center {
-    justify-content: center;
-  }
+.is-horizontal-center {
+  justify-content: center;
+}
+
+.title {
+  margin-left: 5%;
+  justify-content: center;
+}
+
+.topHeading {
+  margin-top: 5%;
+}
+
+.habitBox {
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.newColor {
+  background-color: red;
+  border-width: 2px;
+  border-color: black;
+}
+
+.cancelButton {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.createAccount {
+  margin-top: 5%;
+  margin-left: 55%;
+  /* margin-right: 10%; */
+}
+
+/* .title {
+  margin-top: 20%;
+  padding-bottom: 5%;
+} */
