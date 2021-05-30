@@ -7,7 +7,7 @@ addNewHabitBtn.addEventListener("click", async function (event) {
     const frequency = document.querySelector('#current-frequency').value;
     const good_habit = document.querySelector('#good-habit').checked;
 
-    const response = await fetch('/api/habits', {
+    const res = await fetch('/api/habits', {
         method: 'POST',
         body: JSON.stringify({
             name,
@@ -17,15 +17,5 @@ addNewHabitBtn.addEventListener("click", async function (event) {
         }),
         headers: { 'Content-Type': 'application/json' },
     });
-    if (response.ok) {
-        console.log("Responses ok!")
-        console.log(response)
-        // document.location.replace('/addHabit');
-        document.location.replace("/habits")
-
-    } else {
-        console.log(response)
-        alert('Failed to add new habit');
-    }
-
+    res.ok ? document.location.replace('/habits') : alert(res.statusText);
 })

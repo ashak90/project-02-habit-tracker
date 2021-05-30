@@ -11,30 +11,24 @@ cancelBtn.addEventListener('click', function () {
 createAcctBtn.addEventListener('click', async function (event) {
   event.preventDefault();
   console.log("You hit the create account button")
-  let firstnameEl = document.querySelector('#firstname-input-signup').value;
-  let lastnameEl = document.querySelector('#lastname-input-signup').value;
-  let emailEl = document.querySelector('#email-input-signup').value;
-  let ageEl = document.querySelector('#age-input-signup').value;
-  let usernameEl = document.querySelector('#username-input-signup').value;
-  let passwordEl = document.querySelector('#password-input-signup').value;
+  const first_name = document.querySelector('#firstname-input-signup').value;
+  const last_name = document.querySelector('#lastname-input-signup').value;
+  const email = document.querySelector('#email-input-signup').value;
+  const age = document.querySelector('#age-input-signup').value;
+  const username = document.querySelector('#username-input-signup').value;
+  const password = document.querySelector('#password-input-signup').value;
 
-  const response = await fetch('/api/users', {
+  const res = await fetch('/api/users', {
     method: 'POST',
     body: JSON.stringify({
-      first_name: firstnameEl,
-      last_name: lastnameEl,
-      email: emailEl,
-      age: ageEl,
-      username: usernameEl,
-      password: passwordEl,
+      first_name,
+      last_name,
+      email,
+      age,
+      username,
+      password
     }),
     headers: { 'Content-Type': 'application/json' },
   });
-
-  if (response.ok) {
-    console.log("Responses ok!")
-    document.location.replace('/habits');
-  } else {
-    alert(response.statusText);
-  }
+  res.ok ? document.location.replace('/habits') : alert(res.statusText);
 });
