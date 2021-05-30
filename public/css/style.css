@@ -1,5 +1,17 @@
+.navbar-brand,
+.navbar.is-light {
+  background-color: lightpink;
+}
+
+img {
+  position: relative;
+  margin-left: 305%;
+  /* margin-right: auto; */
+  width: 80%;
+}
+
 #grad {
-  background-image: linear-gradient(lightblue,aqua,purple);
+  background-image: linear-gradient(lightblue, aqua, purple);
 }
 
 .is-horizontal-center {
