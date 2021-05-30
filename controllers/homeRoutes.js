@@ -16,7 +16,13 @@ router.get('/signup', (req, res) => {
     res.render('signup');
 });
 router.get('/habits', withAuth, async (req, res) => {
-    res.render('habits');
+    const userData = await User.findByPk(req.session.user_id, {
+        include: [{ model: Habit }]
+    });
+    const user = userData.get({ plain: true });
+    res.render('habits', {
+        ...user
+    });
 });
 router.get('/addHabit', withAuth, async (req, res) => {
     res.render('addHabit');
