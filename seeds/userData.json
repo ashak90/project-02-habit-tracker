@@ -1,5 +1,13 @@
 [
     {
+        "first_name": "admin",
+        "last_name": "admin",
+        "email": "admin@avg.net",
+        "age": 0,
+        "username": "admin",
+        "password": "password"
+    },
+    {
         "first_name": "Steve",
         "last_name": "Rogers",
         "email": "caprogers@avg.net",

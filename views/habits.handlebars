@@ -1,26 +1,20 @@
 <section id="grad" class="hero is-fullheight">
   <div class="container is-fluid has-text-centered">
     <!-- Heading and add new habit button -->
-    <div
-      class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading"
-    >
+    <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading">
       <h1 class="title">
-        Habits
+        {{first_name}}'s Habits
       </h1>
     </div>
     <hr />
 
     <!-- Today's date section -->
-    <div
-      class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading"
-    >
+    <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading">
       <p id="todayDate">01/01/0001</p>
     </div>
 
     <!-- Table starts below -->
-    <table
-      class="table is-striped is-hoverable is-fullwidth has-background-danger-light"
-    >
+    <table class="table is-striped is-hoverable is-fullwidth has-background-danger-light">
       <thead>
         <tr>
           <th><abbr title="habitName">Habit Name</abbr></th>
@@ -31,25 +25,30 @@
       </thead>
 
       <!-- Content of the table is below -->
-      {{#each habit}}
-        <tbody>
-          <tr>
-            <td>{{name}}</td>
-            <td>{{good_habit}}</td>
-            <td>{{frequency}}</td>
-            <td>{{target_freq}}</td>
-          </tr>
 
-        </tbody>
+      {{#each habits as |habit|}}
+      <tbody>
+        <tr>
+          <td>{{habit.name}}</td>
+          {{#if habit.good_habit}}
+          <td>Good</td>
+          {{else}}
+          <td>Bad</td>
+          {{/if}}
+          <td>{{habit.frequency}}</td>
+          <td>{{habit.target_freq}}</td>
+        </tr>
+
+      </tbody>
 
       {{else}}
-        <tbody>
-          <tr>
-            <td> No habits to display</td>
+      <tbody>
+        <tr>
+          <td> No habits to display</td>
 
-          </tr>
+        </tr>
 
-        </tbody>
+      </tbody>
       {{/each}}
     </table>
     <button id="addNewBtn" class="button addNew">Add New Habit</button>

@@ -5,7 +5,7 @@ addNewHabitBtn.addEventListener("click", async function (event) {
     const name = document.querySelector('#habit-name').value;
     const target_freq = document.querySelector('#desired-frequency').value;
     const frequency = document.querySelector('#current-frequency').value;
-    const good_habit = document.querySelector('#good-habit:checked') ? true : false;
+    const good_habit = document.querySelector('#good-habit').checked;
 
     const response = await fetch('/api/habits', {
         method: 'POST',
