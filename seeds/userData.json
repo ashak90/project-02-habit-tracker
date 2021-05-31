@@ -54,5 +54,13 @@
         "age": 20,
         "username": "ScarletWitch",
         "password": "vision123"
+    },
+    {
+        "first_name": "Tony",
+        "last_name": "Stark",
+        "email": "tstark@avg.net",
+        "age": 53,
+        "username": "BestAvenger",
+        "password": "ironman1"
     }
 ]
