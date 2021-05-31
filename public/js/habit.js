@@ -14,6 +14,7 @@ const handleTableClick = async (event) => {
     console.log(habit);
     freq.innerHTML = habit.frequency;
     if (freq.innerHTML == habit.target_freq && habit.good_habit) document.location.replace('/congrats');
+    if (freq.innerHTML > habit.target_freq && !habit.good_habit) console.log("better luck next time");
   } else {
     alert(res.statusText);
   }
