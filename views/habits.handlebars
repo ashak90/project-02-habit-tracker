@@ -14,7 +14,7 @@
     </div>
 
     <!-- Table starts below -->
-    <table class="table is-striped is-hoverable is-fullwidth has-background-danger-light">
+    <table id="habitTable" class="table is-striped is-hoverable is-fullwidth has-background-danger-light">
       <thead>
         <tr>
           <th><abbr title="habitName">Habit Name</abbr></th>
@@ -28,7 +28,7 @@
 
       {{#each habits as |habit|}}
       <tbody>
-        <tr>
+        <tr data-id={{habit.id}}>
           <td>{{habit.name}}</td>
           {{#if habit.good_habit}}
           <td>Good</td>
