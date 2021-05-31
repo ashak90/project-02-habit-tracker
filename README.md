@@ -4,6 +4,9 @@
 
 ## Description
 
+This is a Habit Tracker App that allows a user to track their habits, either good or bad. 
+
+Along with Node.js, it uses Express.js to create a RESTFUL API, and Handlebars.js as the template engine. The database uses MySQL and Sequelize ORM.
 
 
 ## Table of Contents 
@@ -20,16 +23,27 @@
 
 To install, run the following command:  
 ```
-
+npm i
 ```
 
 
-## Usage  
+## Usage 
+
+To seed data, run the following command:
+```
+npm run seed
+```
+
+To start the program, run the following command:
+```
+npm start
+```
 
 
 ## Screenshots
 
 ![homepage](./public/images/homepage.png)
+![tonystark](./public/images/tony-habits.png)
 
 
 
