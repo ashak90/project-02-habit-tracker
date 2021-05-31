@@ -5,8 +5,11 @@
 
 img {
   position: relative;
-  margin-left: 305%;
-  /* margin-right: auto; */
+  /* margin-left: 305%; */
+  margin-left: 430%;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
   width: 80%;
 }
 
