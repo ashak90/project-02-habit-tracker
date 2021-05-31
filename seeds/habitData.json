@@ -26,5 +26,12 @@
         "frequency": 7,
         "target_freq": 1,
         "user_id": 2
+    },
+    {
+        "name": "Test",
+        "good_habit": true,
+        "frequency": 1,
+        "target_freq": 1,
+        "user_id": 3
     }
 ]

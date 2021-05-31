@@ -1,56 +1,59 @@
-<section id= "grad" class="hero is-fullheight">
-        <div class="container is-fluid has-text-centered">
-            <!-- Heading and add new habit button -->
-            <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading">
-                <h1 class="title">
-                    Habits
-                </h1>
-            </div>
-            <hr>
+<section id="grad" class="hero is-fullheight">
+  <div class="container is-fluid has-text-centered">
+    <!-- Heading and add new habit button -->
+    <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading">
+      <h1 class="title">
+        {{first_name}}'s Habits
+      </h1>
+    </div>
+    <hr />
 
-            <!-- Today's date section -->
-            <div
-                class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading">
-                <p id="todayDate">01/01/0001</p>
-            </div>
+    <!-- Today's date section -->
+    <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd topHeading">
+      <p id="todayDate">01/01/0001</p>
+    </div>
 
+    <!-- Table starts below -->
+    <table class="table is-striped is-hoverable is-fullwidth has-background-danger-light">
+      <thead>
+        <tr>
+          <th><abbr title="habitName">Habit Name</abbr></th>
+          <th><abbr title="goodBad">Good/Bad</abbr></th>
+          <th><abbr title="currentFreq">Current Frequency</abbr></th>
+          <th><abbr title="desiredFreq">Desired Frequency</abbr></th>
+        </tr>
+      </thead>
 
-            <!-- Table starts below -->
-            <table class="table is-striped is-hoverable is-fullwidth has-background-danger-light">
-                <thead>
-                    <tr>
-                        <th><abbr title="habitName">Habit Name</abbr></th>
-                        <th><abbr title="goodBad">Good/Bad</abbr></th>
-                        <th><abbr title="currentFreq">Current Frequency</abbr></th>
-                        <th><abbr title="desiredFreq">Desired Frequency</abbr></th>
-                    </tr>
-                </thead>
+      <!-- Content of the table is below -->
 
-                <!-- Content of the table is below -->
-                {{#each habit}}
-                <tbody>
-                    <tr>
-                        <td>{{name}}</td>
-                        <td>{{good_habit}}</td>
-                        <td>{{frequency}}</td>
-                        <td>{{target_freq}}</td>
-                    </tr>
+      {{#each habits as |habit|}}
+      <tbody>
+        <tr>
+          <td>{{habit.name}}</td>
+          {{#if habit.good_habit}}
+          <td>Good</td>
+          {{else}}
+          <td>Bad</td>
+          {{/if}}
+          <td>{{habit.frequency}}</td>
+          <td>{{habit.target_freq}}</td>
+        </tr>
 
-                </tbody>
+      </tbody>
 
-                {{else}}
-                <tbody>
-                    <tr>
-                        <td> No habits to display</td>
-    
-                    </tr>
+      {{else}}
+      <tbody>
+        <tr>
+          <td> No habits to display</td>
 
-                </tbody>
-                {{/each}}
-            </table>
-            <button id= "addNewBtn" class="button addNew">Add New Habit</button>
+        </tr>
 
-        </div>
-    </section>
+      </tbody>
+      {{/each}}
+    </table>
+    <button id="addNewBtn" class="button addNew">Add New Habit</button>
+    <button id="logOutBtn" class="button lotOut">Log Out</button>
+  </div>
+</section>
 
 <script src="./js/habit.js"></script>
