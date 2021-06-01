@@ -4,7 +4,7 @@ const loginBtn = document.getElementById('login-btn');
 
 
 cancelBtn.addEventListener('click', function () {
-  // event.preventDefault();
+  event.preventDefault();
   window.location.href = "/"
 });
 
