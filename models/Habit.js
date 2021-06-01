@@ -22,19 +22,11 @@ Habit.init(
     },
     frequency: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        min: 0,
-        max: 7
-      }
+      allowNull: false
     },
     target_freq: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        min: 0,
-        max: 7
-      }
+      allowNull: false
     },
     user_id: {
       type: DataTypes.INTEGER,
