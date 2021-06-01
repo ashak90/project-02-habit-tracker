@@ -5,6 +5,10 @@ const habitTable = document.getElementById("habitTable");
 const handleTableClick = async (event) => {
   const habitEl = event.target.parentElement;
   const habitId = habitEl.dataset.id;
+  if (!habitId) {
+    handleDelete(habitEl);
+    return;
+  }
   const freq = habitEl.childNodes[5];
   const res = await fetch(`/api/habits/increment/${habitId}`, {
     method: 'PUT'
@@ -17,6 +21,16 @@ const handleTableClick = async (event) => {
     if (freq.innerHTML > habit.target_freq && !habit.good_habit) console.log("better luck next time");
   } else {
     alert(res.statusText);
+  }
+}
+
+const handleDelete = async (habitEl) => {
+  const habitId = habitEl.parentElement.dataset.id;
+  const res = await fetch(`/api/habits/${habitId}`, {
+    method: 'DELETE'
+  });
+  if (res.ok) {
+    document.location.reload();
   }
 }
 
