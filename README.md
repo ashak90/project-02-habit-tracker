@@ -67,7 +67,6 @@ https://opensource.org/licenses/MIT
 | Erica   | https://github.com/ricapi96  |
 | Asha    | https://github.com/ashak90   |
 | Valentin| https://github.com/valentinGarcia-gh  |
-| Wai     |                              |
 
 
 
