@@ -36,6 +36,19 @@ router.post('/', withAuth, async (req, res) => {
     }
 });
 
+router.put('/:id', withAuth, async (req, res) => {
+    try {
+        const habit = await Habit.update(req.body, {
+            where: {
+                id: req.params.id
+            }
+        });
+        habit ? res.status(200).json(habit) : res.status(404);
+    } catch (err) {
+        res.status(400).json(err);
+    }
+});
+
 router.put('/increment/:id', withAuth, async (req, res) => {
     try {
         await Habit.increment('frequency', {
@@ -45,7 +58,7 @@ router.put('/increment/:id', withAuth, async (req, res) => {
             }
         });
         const habit = await Habit.findByPk(req.params.id);
-        res.status(200).json(habit);
+        habit ? res.status(200).json(habit) : res.status(404);
     } catch (err) {
         res.status(400).json(err);
     }
